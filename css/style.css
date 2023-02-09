@@ -1,0 +1,331 @@
+:root {
+    --fuente: 'Montserrat', sans-serif;
+    --fuenteSecundaria: 'Nunito Sans', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;   
+    font-family: 'Hind', sans-serif;
+}
+
+/* header */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.encabezado__logo--img {
+    height: 20px;
+}
+.encabezado__search {
+    display: flex;
+}
+.encabezado__search--input {
+    width: 300px;
+    font-size: 20px;
+}
+.enbabezado__login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.encabezado__boton {
+    background-color: black;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    color: white;
+    font-family: var(--fuenteSecundaria);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.boton__carrito {
+    font-size: 30px;
+    cursor: pointer;
+}
+.encabezado__iconos {
+    display: flex;
+    flex-direction: column;
+}
+.boton__carrito, .boton__user {
+    font-size: 40px;
+}
+
+
+/* Header Responsive */
+.icono-menu{
+    position: relative;
+    z-index: 10;
+}
+.icono-menu img{
+    margin: 10px 10px;
+    width: 50px;
+    cursor: pointer;
+    background: white;
+}
+.prueba2 {
+    display: flex;
+    width: 100%;
+}
+.encabezado__search--input2 {
+    margin: 14.5px auto;
+    height: 40px;
+    width: 70%;
+}
+
+/* navegacion principal */
+.barra {
+    background-color: black;
+    height: 70px;
+}
+.barra__navegacion {
+    width: 50%;
+    margin: 0 auto;
+}
+.barra__navegacion__lista {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.barra__navegacion__lista--articulo{
+    margin-top: 25px;
+}
+.barra__navegacion__lista--item:hover{
+    background-color: white;
+    color: rgb(33, 30, 8);
+}
+.barra__navegacion__lista--item {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+/* Grid */
+.mainPrincipal {
+    display: grid;
+    grid-template-areas: 
+    "banner"
+    "contenidoBicicletas"
+    "contenidoCategorias"
+    "contenidoArticulos"
+    "contenidoMapa"
+    "rodapiePrincipal";
+    grid-template-columns: auto;
+    grid-template-rows: 50vh;
+}
+.banner {
+    grid-area: banner;
+    background: url(../img/imagenprueba2.webp)no-repeat;
+    background-position: center;
+}
+.contenidoDestacado {
+    background-color: #f8f8f8;
+    grid-area: contenidoBicicletas;
+}
+.contenidoCategorias {
+    grid-area: contenidoCategorias;
+    background-color: #f8f8f8;
+    padding: 30px 0 0;
+}
+.contenidoArticulos {
+    grid-area: contenidoArticulos;
+    background-color: #f8f8f8;
+}
+.contenidoMapa {
+    grid-area: contenidoMapa;
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+.rodapiePrincipal {
+    grid-area: rodapiePrincipal;
+    background-color: black;
+    padding: 50px;
+}
+
+/* Contenido Productos Destacados */
+.contenidoDestacado--titulo {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contenidoDestacado__productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    gap: 20px;
+    width: 90%;
+    height: 490px;
+}
+
+/* Productos Informacion */
+.producto {
+    width: 100%;
+    height: 470px;
+    background-color: white;
+    box-shadow: 0px 5px 15px 0px rgba(176, 176, 176, 0.48);
+}
+.producto:hover {
+    cursor: pointer;
+}
+.producto__contenido{
+    width: 90%;
+    margin: 0 auto;
+}
+.producto--img {
+    height: 260px;
+    width: 100%;
+}
+.producto__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.producto__info--precio {
+    font-size: 35px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+.producto__info--nombre span {
+    text-transform: uppercase;
+}
+.producto__info--boton {
+    background-color: black;
+    border-radius: 40px;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.no-width {
+    width: 50px;
+}
+
+/*  Categorias  */
+.contenidoCategorias--titulo {
+    background-color: black;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+    color: white;
+}
+.contenidoCategorias__contenedor {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    width: 1400px;
+}
+.contenidoCategorias__div1,
+.contenidoCategorias__div2 {
+    border-radius: 10px;
+    width: 600px;
+    height: 380px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+.contenidoCategorias__div1 {
+    background-image: url(../img/bicicletasdiv.jpg);
+}
+.contenidoCategorias__div2 {
+    background-image: url(../img/accesorios.jpg);
+}
+.contenidoCategoriasHover:hover {
+    color: white;
+    box-shadow: 0px 5px 15px 0px rgba(71, 71, 71, 0.9);
+}
+.contenidoCategorias__imagenes {
+    width: 60%;
+}
+.contenidoCategorias__div--texto {
+    margin-top: 320px;
+    padding: 10px;
+}
+.backgroundTexto {
+    margin-top: 320px;
+    background: black;
+    opacity: 0.6;  
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Articulos */
+.articulos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px auto;
+    width: 850px;
+    gap: 20px;
+}
+.contenidoArticulos--titulo {
+    font-size: 30px;
+    text-align: center;
+}
+.articulo {
+    width: 100%;
+    height: 340px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 5px 15px 0px rgba(176, 176, 176, 0.48);
+    text-align: center;
+}
+.articulo:hover {
+    box-shadow: 0px 5px 15px 0px rgba(176, 176, 176, 0.9);
+    cursor: pointer;
+}
+.articulo--img {
+    height: 200px;
+    width: 90%;
+    border-bottom: 1px solid gray;
+}
+.articulo__contenido__info {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+/* Mapa */
+.SectionMapa{
+    text-align: center;
+    padding: 3em 0;
+}
+.titulo-mapa {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.formasDePago {
+    margin-top: 20px;
+    text-align: center;
+}
+.formasDePago__img {
+    width: 60%;
+}
+
+/* Footer Principal */
+.rodapiePrincipal__titulo {
+    color: white;
+    font-size: 30px;
+    font-family: var(--fuente);
+    text-align: center;
+}

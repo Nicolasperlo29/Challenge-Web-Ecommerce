@@ -1,0 +1,172 @@
+@media (max-width: 1400px) {
+    .contenidoCategorias__div1 , .contenidoCategorias__div2 {
+        width: 500px;
+    }
+    .contenidoCategorias__contenedor {
+        width: 1100px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .bicicletas {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 500px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 1260px) {
+    .producto {
+        height: 400px;
+    }
+    .producto__info {
+        line-height: 25px;
+    }
+    .producto__info--nombre {
+        font-size: 25px;
+    }
+    .producto__info--precio {
+        font-size: 23px;
+    }
+    .producto__info--boton {
+        font-size: 15px;
+    }
+    .producto--img {
+        height: 190px;
+    }
+    .producto__contenido {
+        margin: 20px auto;
+    }
+    .contenidoDestacado__productos {
+        height: 420px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .contenidoCategorias__contenedor {
+        flex-direction: column;
+        width: 80%;
+    }
+    .contenidoCategorias__div1 , .contenidoCategorias__div2 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .encabezado__search--input {
+        width: 200px;
+    }
+    .barra__navegacion { 
+        width: 95%;
+    }
+    .articulos {
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+    }
+    .contenidoDestacado__productos {
+        height: 900px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .articulo--img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .articulos {
+        width: 80%;
+    }
+    .bicicletas {
+        grid-template-columns: 1fr;
+        margin-bottom: 1500px;
+    }
+    .barra__navegacion { 
+        display: none;
+    }
+    .prueba2 {
+        display: flex;
+    }
+    .botonprueba {
+        height: 70px;
+    }
+    .contenidoBicicleta__cabecera--titulo {
+        font-size: 35px;
+    }
+    .contenidoBicicleta__cabecera--vertodo {
+        font-size: 25px;
+    }
+    .barra__navegacion { 
+        width: 95%;
+    }
+    .encabezado__search {
+        display: none;
+    }
+    .encabezado__boton {
+        font-size: 15px;
+    }
+    .encabezado__logo{
+        width: 50%;
+    }
+    .articulo--img {
+        width: 90%;
+    }
+    .rodapiePrincipal__titulo {
+        font-size: 15px;
+    }
+    .mapa {
+        width: 90%;
+        height: 250px;
+    }
+    .formasDePago__img {
+        width: 95%;
+        height: 80px;
+    }
+    .contenidoDestacado--titulo {
+        font-size: 25px;
+    }
+    .contenidoCategorias__div1 , .contenidoCategorias__div2 {
+        width: 90%;
+    }
+    .contenidoCategorias__contenedor {
+        width: 90%;
+    }
+    .boton__user {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .prueba2 {
+        display: none;
+    }
+}
+
+@media (max-width: 510px) {
+    .encabezado__boton {
+        font-size: 10px;
+    }
+    .encabezado__logo--img{
+        width: 150px;
+    }
+    .contenidoDestacado__productos {
+        height: 1700px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .articulo {
+        height: 260px;
+    }
+    .articulo__contenido__info {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    .articulo--img {
+        height: 150px;
+    }
+
+}
+
+
+
+
+

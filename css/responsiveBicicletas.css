@@ -1,0 +1,25 @@
+@media (max-width: 1080px) {
+    .bicicletas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .todasLasBicicletas__ordenar h1, select {
+        font-size: 20px;
+    }
+    .todasLasBicicletas__header--boton {
+        font-size: 20px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bicicletas {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .todasLasBicicletas__header--boton {
+        font-size: 15px;
+        padding: 13px;
+    }
+    .todasLasBicicletas__ordenar h1, select {
+        font-size: 15px;
+    }
+}

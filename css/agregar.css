@@ -1,0 +1,19 @@
+.agregar {
+    background-color: white;
+    margin: 20px auto;
+    padding: 50px;
+    border-radius: 20px;
+    width: 35%;
+    font-family: 'Poppins', sans-serif;
+    height: 650px;
+}
+.agregar--titulo {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+.agregar__contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
